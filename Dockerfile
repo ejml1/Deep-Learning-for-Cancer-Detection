@@ -27,4 +27,6 @@ RUN pip install scikit-learn matplotlib
 
 RUN pip install seaborn
 
+RUN pip install pillow
+
 CMD [ "jupyter", "lab", "-p", "8888"]
