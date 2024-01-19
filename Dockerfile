@@ -27,6 +27,6 @@ RUN pip install scikit-learn matplotlib
 
 RUN pip install seaborn
 
-RUN pip install pillow
+RUN pip install pickle5
 
 CMD [ "jupyter", "lab", "-p", "8888"]
