@@ -37,17 +37,6 @@ RUN pip install keras-cv-attention-models
 
 RUN pip install scikit-image
 
-# RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
-#     bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/conda && \
-#     rm Miniconda3-latest-Linux-x86_64.sh
-
-# ENV PATH="/opt/conda/bin:${PATH}"
-
-# # Create a Conda environment
-# RUN conda create --name myenv python=3.8 && \
-#     echo "conda activate myenv" >> ~/.bashrc
-
-# # Activate the Conda environment
-# SHELL ["/bin/bash", "--login", "-c"]
+RUN pip install lime
 
 CMD [ "jupyter", "lab", "-p", "8888"]
