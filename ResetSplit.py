@@ -1,3 +1,7 @@
+'''
+This file is to reset the files in the source directory to the original directory if the process goes wrong
+'''
+
 import os
 import shutil
 
