@@ -1,0 +1,83 @@
+2024-03-03 12:33:23.147011: I tensorflow/core/platform/cpu_feature_guard.cc:183] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-03-03 12:33:25.130394: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:1013] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-03-03 12:33:25.138243: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:1013] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-03-03 12:33:25.138529: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:1013] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+Found 525499 files belonging to 21 classes.
+2024-03-03 12:33:46.968872: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:1013] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-03-03 12:33:46.969145: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:1013] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-03-03 12:33:46.969349: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:1013] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-03-03 12:33:47.031877: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:1013] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-03-03 12:33:47.032139: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:1013] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-03-03 12:33:47.032407: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:1013] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-03-03 12:33:47.032588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1638] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10135 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060, pci bus id: 0000:01:00.0, compute capability: 8.6
+Found 23973 files belonging to 21 classes.
+2024-03-03 12:33:48.454359: I tensorflow/core/common_runtime/executor.cc:1209] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [525499]
+	 [[{{node Placeholder/_0}}]]
+2024-03-03 12:33:48.454770: I tensorflow/core/common_runtime/executor.cc:1209] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [525499]
+	 [[{{node Placeholder/_0}}]]
+Epoch 1/500
+2024-03-03 12:33:50.339477: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:424] Loaded cuDNN version 8901
+2024-03-03 12:33:50.919187: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:655] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+2024-03-03 12:33:50.942322: I tensorflow/compiler/xla/service/service.cc:169] XLA service 0x55d4c80db980 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-03-03 12:33:50.942363: I tensorflow/compiler/xla/service/service.cc:177]   StreamExecutor device (0): NVIDIA GeForce RTX 3060, Compute Capability 8.6
+2024-03-03 12:33:50.947399: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2024-03-03 12:33:51.080683: I ./tensorflow/compiler/jit/device_compiler.h:180] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2024-03-03 12:40:53.741430: I tensorflow/core/common_runtime/executor.cc:1209] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_4' with dtype int32 and shape [23973]
+	 [[{{node Placeholder/_4}}]]
+2024-03-03 12:40:53.741895: I tensorflow/core/common_runtime/executor.cc:1209] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_4' with dtype int32 and shape [23973]
+	 [[{{node Placeholder/_4}}]]
+16422/16422 - 438s - loss: 1.2850 - accuracy: 0.5941 - val_loss: 0.9534 - val_accuracy: 0.6895 - 438s/epoch - 27ms/step
+Epoch 2/500
+16422/16422 - 436s - loss: 0.9363 - accuracy: 0.6979 - val_loss: 1.1265 - val_accuracy: 0.6408 - 436s/epoch - 27ms/step
+Epoch 3/500
+16422/16422 - 427s - loss: 0.8459 - accuracy: 0.7264 - val_loss: 1.0217 - val_accuracy: 0.6595 - 427s/epoch - 26ms/step
+Epoch 4/500
+16422/16422 - 427s - loss: 0.7961 - accuracy: 0.7412 - val_loss: 0.8307 - val_accuracy: 0.7293 - 427s/epoch - 26ms/step
+Epoch 5/500
+16422/16422 - 431s - loss: 0.7635 - accuracy: 0.7513 - val_loss: 0.7520 - val_accuracy: 0.7537 - 431s/epoch - 26ms/step
+Epoch 6/500
+16422/16422 - 428s - loss: 0.7363 - accuracy: 0.7585 - val_loss: 0.7462 - val_accuracy: 0.7555 - 428s/epoch - 26ms/step
+Epoch 7/500
+16422/16422 - 435s - loss: 0.7190 - accuracy: 0.7635 - val_loss: 0.7662 - val_accuracy: 0.7490 - 435s/epoch - 26ms/step
+Epoch 8/500
+16422/16422 - 427s - loss: 0.7029 - accuracy: 0.7696 - val_loss: 0.7628 - val_accuracy: 0.7542 - 427s/epoch - 26ms/step
+Epoch 9/500
+16422/16422 - 428s - loss: 0.6898 - accuracy: 0.7730 - val_loss: 0.8984 - val_accuracy: 0.7104 - 428s/epoch - 26ms/step
+Epoch 10/500
+16422/16422 - 426s - loss: 0.6793 - accuracy: 0.7760 - val_loss: 0.7788 - val_accuracy: 0.7441 - 426s/epoch - 26ms/step
+Epoch 11/500
+16422/16422 - 432s - loss: 0.6686 - accuracy: 0.7799 - val_loss: 0.7036 - val_accuracy: 0.7731 - 432s/epoch - 26ms/step
+Epoch 12/500
+16422/16422 - 429s - loss: 0.6608 - accuracy: 0.7816 - val_loss: 0.7970 - val_accuracy: 0.7345 - 429s/epoch - 26ms/step
+Epoch 13/500
+16422/16422 - 432s - loss: 0.6534 - accuracy: 0.7839 - val_loss: 0.6826 - val_accuracy: 0.7725 - 432s/epoch - 26ms/step
+Epoch 14/500
+16422/16422 - 427s - loss: 0.6451 - accuracy: 0.7861 - val_loss: 0.7054 - val_accuracy: 0.7686 - 427s/epoch - 26ms/step
+Epoch 15/500
+16422/16422 - 433s - loss: 0.6392 - accuracy: 0.7885 - val_loss: 0.7082 - val_accuracy: 0.7707 - 433s/epoch - 26ms/step
+Epoch 16/500
+16422/16422 - 434s - loss: 0.6350 - accuracy: 0.7897 - val_loss: 0.6729 - val_accuracy: 0.7767 - 434s/epoch - 26ms/step
+Epoch 17/500
+16422/16422 - 434s - loss: 0.6299 - accuracy: 0.7914 - val_loss: 0.6922 - val_accuracy: 0.7753 - 434s/epoch - 26ms/step
+Epoch 18/500
+16422/16422 - 427s - loss: 0.6242 - accuracy: 0.7930 - val_loss: 0.6780 - val_accuracy: 0.7770 - 427s/epoch - 26ms/step
+Epoch 19/500
+16422/16422 - 433s - loss: 0.6206 - accuracy: 0.7944 - val_loss: 0.6691 - val_accuracy: 0.7795 - 433s/epoch - 26ms/step
+Epoch 20/500
+16422/16422 - 432s - loss: 0.6155 - accuracy: 0.7953 - val_loss: 0.6951 - val_accuracy: 0.7713 - 432s/epoch - 26ms/step
+Epoch 21/500
+16422/16422 - 428s - loss: 0.6119 - accuracy: 0.7969 - val_loss: 0.7123 - val_accuracy: 0.7678 - 428s/epoch - 26ms/step
+Epoch 22/500
+16422/16422 - 433s - loss: 0.6089 - accuracy: 0.7978 - val_loss: 0.6645 - val_accuracy: 0.7843 - 433s/epoch - 26ms/step
+Epoch 23/500
+16422/16422 - 433s - loss: 0.6051 - accuracy: 0.7993 - val_loss: 0.6792 - val_accuracy: 0.7759 - 433s/epoch - 26ms/step
+Epoch 24/500
+16422/16422 - 427s - loss: 0.6013 - accuracy: 0.7999 - val_loss: 0.6928 - val_accuracy: 0.7703 - 427s/epoch - 26ms/step
+Epoch 25/500
+16422/16422 - 433s - loss: 0.5995 - accuracy: 0.8005 - val_loss: 0.6864 - val_accuracy: 0.7741 - 433s/epoch - 26ms/step
+Epoch 26/500
+16422/16422 - 432s - loss: 0.5969 - accuracy: 0.8013 - val_loss: 0.6801 - val_accuracy: 0.7786 - 432s/epoch - 26ms/step
+Epoch 27/500
+16422/16422 - 432s - loss: 0.5944 - accuracy: 0.8026 - val_loss: 0.7002 - val_accuracy: 0.7728 - 432s/epoch - 26ms/step
+Time taken:  11642.209864139557

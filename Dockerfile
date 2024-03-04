@@ -33,10 +33,10 @@ RUN pip install git+https://github.com/qubvel/classification_models.git
 
 RUN pip install keras-cv-attention-models
 
-RUN pip install keras-cv-attention-models
-
 RUN pip install scikit-image
 
-RUN pip install lime
+RUN pip install scikeras
+
+RUN pip install keras-tuner
 
 CMD [ "jupyter", "lab", "-p", "8888"]
