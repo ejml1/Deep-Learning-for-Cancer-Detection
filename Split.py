@@ -1,3 +1,7 @@
+'''
+File used to split the data into training, validation, and test sets.
+'''
+
 import os
 import shutil
 

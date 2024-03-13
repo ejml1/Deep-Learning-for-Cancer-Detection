@@ -1,3 +1,7 @@
+'''
+For each image in the dataset, this script checks if the image is corrupted or not.
+'''
+
 import os
 import cv2
 import imghdr
@@ -9,8 +13,7 @@ def verify_image(image_path):
     except Exception as e:
         print('Error: ' + str(e))
 
-#data_dir = 'BM_cytomorphology_data'
-data_dir = 'Data_Subset'
+data_dir = 'BM_cytomorphology_data'
 image_exts = ['jpg']
 
 for image_class in os.listdir(data_dir):
