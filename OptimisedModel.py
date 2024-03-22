@@ -88,10 +88,10 @@ t1 = time.time()-t0
 print('Time taken: ', t1)
 
 folder = 'pickle'
-inner_foler = 'augmented_2'
+inner_folder = 'augmented'
 
-with open(os.path.join(folder, inner_foler, 'model_pickle'), 'wb') as f:
+with open(os.path.join(folder, inner_folder, 'model_pickle'), 'wb') as f:
     pickle.dump(model, f)
 
-with open(os.path.join(folder, inner_foler, 'history_pickle'), 'wb') as f:
+with open(os.path.join(folder, inner_folder, 'history_pickle'), 'wb') as f:
     pickle.dump(hist.history, f)

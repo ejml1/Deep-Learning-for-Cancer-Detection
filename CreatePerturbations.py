@@ -21,7 +21,7 @@ for gpu in gpus:
     tf.config.experimental.set_memory_growth(gpu, True)
 
 folder = 'pickle'
-inner_folder = 'augmented_2'
+inner_folder = 'augmented'
 
 num_perturb = 128
 superpixel_set = [1, 5, 15, 25, 30, 35, 40, 45]
@@ -47,7 +47,7 @@ def perturb_image(img, perturbation, segments):
     perturbed_image = perturbed_image / 255.0
     return perturbed_image
 
-
+# Uses only 30% of the images in the dataset
 def createImages(image_class):
     image_class_path = os.path.join('Validation', image_class)
     images = os.listdir(image_class_path)
@@ -58,6 +58,7 @@ def createImages(image_class):
         image_path = os.path.join(image_class_path, image_name)
         image = skimage.io.imread(image_path)
 
+        # Quick shift algorithm to segment image into superpixels
         superpixels = skimage.segmentation.quickshift(image, kernel_size=4,max_dist=200, ratio=0.2)
         num_superpixels = np.unique(superpixels).shape[0]
         perturbations = np.random.binomial(1, 0.5, size=(num_perturb, num_superpixels))

@@ -19,8 +19,6 @@ RUN apt-get update --yes && \
 
 RUN pip3 install --user --upgrade --disable-pip-version-check pip
 
-RUN pip3 install --user --no-cache-dir --disable-pip-version-check --root-user-action=ignore -r requirements.txt
-
 RUN pip install scikit-learn opencv-python
 
 RUN pip install scikit-learn matplotlib

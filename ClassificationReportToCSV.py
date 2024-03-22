@@ -1,3 +1,7 @@
+'''
+Turn classification reports to CSV files
+'''
+
 import csv
 import sys
 import pickle
@@ -5,7 +9,7 @@ import pickle
 def save_classification_report_to_csv(class_report, filename):
     lines = class_report.split('\n')
     rows = []
-    for line in lines[2:-5]:  # Skip header and footer lines
+    for line in lines[2:-5]: 
         row = line.strip().split()
         rows.append(row)
 
