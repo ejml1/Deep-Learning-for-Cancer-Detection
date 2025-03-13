@@ -1,6 +1,6 @@
 # Introduction
 
-This project forms the artifacts for a BSc Dissertation at the University of St Andrews. The report is provided in the repository under Deep_Learning_for_Cancer_Detection_Report.pdf
+This project forms the artifacts for a BSc Dissertation at the University of St Andrews. The report is provided in the repository under DeepLearningForCancerDetectionReport.pdf
 
 # Dataset & Running Instructions
 
@@ -18,13 +18,13 @@ docker run -v <replace-with-path-to-the-following-directory>/Deep-Learning-for-C
 
 ```
 
-In the Preprocess directory, run the following command to remove the identified corrupted images from the dataset:
+In the preprocess directory, run the following command to remove the identified corrupted images from the dataset:
 
 ```bash
 python DeleteCorrupted.py
 ```
 
-The dataset can then be split into the train, validation, and test subsets by creating 2 directories for the validation and test subsets and running the following command. For the purpose of training and testing the model for execution, the 2 directories should be named “Validation” and “Test”: 
+The dataset can then be split into the train, validation, and test subsets by creating 2 directories for the validation and test subsets and running the following command. For the purpose of training and testing the model for execution, the 2 directories should be named “validation” and “test”: 
 
 ```bash
 python Split.py
@@ -38,7 +38,7 @@ To create reproducible results, data augmentation was not performed on the fly. 
 python AugmentImages.py
 ```
 
-To generate explanations to perform the LIME experiment, the following command can be run after creating an Explanations/Validation directory:
+To generate explanations to perform the LIME experiment, the following command can be run after creating an explanations/validation directory:
 
 ```bash
 ./CreatePerturbations.sh

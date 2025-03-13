@@ -49,7 +49,7 @@ def perturb_image(img, perturbation, segments):
 
 # Uses only 30% of the images in the dataset
 def createImages(image_class):
-    image_class_path = os.path.join('Validation', image_class)
+    image_class_path = os.path.join('validation', image_class)
     images = os.listdir(image_class_path)
     num_files = len(images) * 0.3 + 1
     for i, image_name in enumerate(images):
@@ -93,13 +93,13 @@ def saveImages(image_class, image, image_name, superpixels, num_superpixels, coe
         mask = np.zeros(num_superpixels) 
         mask[top_features]= True #Activate top superpixels
         perturbed_image = perturb_image(image, mask, superpixels)
-        path = os.path.join('Explanations', 'Validation', str(i), image_class)
+        path = os.path.join('explanations', 'validation', str(i), image_class)
         if not os.path.exists(path):
-            os.makedirs('Explanations/Validation/' + str(i) + '/' + image_class)
+            os.makedirs('explanations/validation/' + str(i) + '/' + image_class)
         plt.imsave(os.path.join(path, image_name), perturbed_image)
-    path = os.path.join('Explanations', 'Validation', 'All', image_class)
+    path = os.path.join('explanations', 'validation', 'all', image_class)
     if not os.path.exists(path):
-        os.makedirs('Explanations/Validation/All/' + image_class)
+        os.makedirs('explanations/validation/all/' + image_class)
     plt.imsave(os.path.join(path, image_name), image)
 
 

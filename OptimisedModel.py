@@ -14,7 +14,7 @@ for gpu in gpus:
     tf.config.experimental.set_memory_growth(gpu, True)
 
 training_data = tf.keras.utils.image_dataset_from_directory('BM_cytomorphology_data_augmented', image_size=(250, 250))
-val_data = tf.keras.utils.image_dataset_from_directory('Validation', image_size=(250, 250))
+val_data = tf.keras.utils.image_dataset_from_directory('validation', image_size=(250, 250))
 
 training_data = training_data.map(lambda image,label: (image/255, label))
 val_data = val_data.map(lambda image,label: (image/255, label))

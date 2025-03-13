@@ -16,7 +16,7 @@ for gpu in gpus:
 
 # Build data pipline
 training_data = tf.keras.utils.image_dataset_from_directory('BM_cytomorphology_data', image_size=(250, 250))
-val_data = tf.keras.utils.image_dataset_from_directory('Validation', image_size=(250, 250))
+val_data = tf.keras.utils.image_dataset_from_directory('validation', image_size=(250, 250))
 
 #Scale data from 0-255 to 0-1
 training_data = training_data.map(lambda image,label: (image/255, label))
