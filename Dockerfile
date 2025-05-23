@@ -11,8 +11,6 @@ RUN apt-get update --yes && \
 
 ENV PATH="/root/.local/bin:${PATH}"
 
-COPY requirements.txt ./
-
 # Install libGL
 RUN apt-get update --yes && \
     apt-get install -y libgl1-mesa-glx
@@ -36,5 +34,9 @@ RUN pip install scikit-image
 RUN pip install scikeras
 
 RUN pip install keras-tuner
+
+RUN pip install "numpy<2"
+
+RUN pip install keras==2.12.0
 
 CMD [ "jupyter", "lab", "-p", "8888"]
