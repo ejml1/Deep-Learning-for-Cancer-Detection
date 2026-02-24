@@ -120,7 +120,7 @@ becomes unsure of what it is seeing.
 
 <p align="center">
     <img src="images/superpixel_comparison.png">
-Comparison of a differing number of superpixels across different classes
+    Comparison of a differing number of superpixels across different classes
 </p>
 
 
@@ -148,7 +148,7 @@ model was able to identify shared features of these cells well.
 
 <p align="center">
     <img src="images/final_model_normalised_confusion_matrix_NEU.png">
-Normalised confusion matrix for the optimised model using data augmentation on the test
+    Normalised confusion matrix for the optimised model using data augmentation on the test
 set where the neutrophils (PMO, MYB, MMZ, NGB, and NGS) are grouped into one category NEU
 </p>
 
