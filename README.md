@@ -70,13 +70,14 @@ The main minimum viable analysis model is a sequential CNN proposed by Matek et 
 
 <p align="center">
     <img src="images/minimum_viable_analysis_model.png">
+    <br>
     Minimum Viable Analysis model proposed by Matek et al.
 </p>
 
 <p align="center">
     <img src="images/minimum_viable_analysis_model_normalised_confusion_matrix.png">
-    Normalised confusion matrix showing the distribution of predictions for each class for the
-main minimum viable analysis model on the validation set
+    <br>
+    Normalised confusion matrix showing the distribution of predictions for each class for the main minimum viable analysis model on the validation set
 </p>
 
 Through hyperparameter tuning and data augmentation, the model was able to reach a validation accuracy of 78.2%. Precision, recall, and F-1 score also presented an increase from 74% for all 3 metrics to
@@ -91,8 +92,8 @@ set was 78.2%, with a balance accuracy, precision, recall, and F1-score being id
 
 <p align="center">
     <img src="images/final_model_normalised_confusion_matrix_test_set.png">
-Normalised confusion matrix for the optimised model using data augmentation on the test
-set
+    <br>
+    Normalised confusion matrix for the optimised model using data augmentation on the test set
 </p>
 
 Details of hyperparamter choices and implementation of data augmentation methods can be found in Section 4.6 Hyperparameter Tuning and 4.7 Data Augmentation in the [report](https://github.com/ejml1/Deep-Learning-for-Cancer-Detection/blob/main/DeepLearningForCancerDetectionReport.pdf).
@@ -120,6 +121,7 @@ becomes unsure of what it is seeing.
 
 <p align="center">
     <img src="images/superpixel_comparison.png">
+    <br>
     Comparison of a differing number of superpixels across different classes
 </p>
 
@@ -148,8 +150,8 @@ model was able to identify shared features of these cells well.
 
 <p align="center">
     <img src="images/final_model_normalised_confusion_matrix_NEU.png">
-    Normalised confusion matrix for the optimised model using data augmentation on the test
-set where the neutrophils (PMO, MYB, MMZ, NGB, and NGS) are grouped into one category NEU
+    <br>
+    Normalised confusion matrix for the optimised model using data augmentation on the test set where the neutrophils (PMO, MYB, MMZ, NGB, and NGS) are grouped into one category NEU
 </p>
 
 ## Running Instructions
