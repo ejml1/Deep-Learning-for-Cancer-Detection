@@ -1,4 +1,11 @@
 ## Deep Learning for Cancer Detection
+![Static Badge](https://img.shields.io/badge/Python-3.10.6-green)
+![Static Badge](https://img.shields.io/badge/TensorFlow-2.12.0-orange)
+![Static Badge](https://img.shields.io/badge/Keras-2.12.0-orange)
+![Static Badge](https://img.shields.io/badge/KerasTuner-orange)
+![Static Badge](https://img.shields.io/badge/Matplotlib-orange)
+![Static Badge](https://img.shields.io/badge/Seaborn-orange)
+
 
 <p align="center">
     <img src="images/cell.png">

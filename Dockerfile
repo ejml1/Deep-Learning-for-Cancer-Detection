@@ -4,39 +4,26 @@ ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN apt-get update --yes && \
     apt-get upgrade --yes && \
-    apt-get install --yes --no-install-recommends locales tzdata && \
+    apt-get install --yes --no-install-recommends locales tzdata libgl1-mesa-glx && \
     echo "en_GB.UTF-8 UTF-8" > /etc/locale.gen && \
     locale-gen && \
     rm -rf /var/lib/apt/lists/*
 
 ENV PATH="/root/.local/bin:${PATH}"
 
-# Install libGL
-RUN apt-get update --yes && \
-    apt-get install -y libgl1-mesa-glx
+RUN pip install --upgrade pip && \
+    pip install \
+    scikit-learn \
+    opencv-python \
+    matplotlib \
+    seaborn \
+    pickle5 \
+    git+https://github.com/qubvel/classification_models.git \
+    keras-cv-attention-models \
+    scikit-image \
+    scikeras \
+    keras-tuner \
+    "numpy<2" \
+    keras==2.12.0
 
-RUN pip3 install --user --upgrade --disable-pip-version-check pip
-
-RUN pip install scikit-learn opencv-python
-
-RUN pip install scikit-learn matplotlib
-
-RUN pip install seaborn
-
-RUN pip install pickle5
-
-RUN pip install git+https://github.com/qubvel/classification_models.git
-
-RUN pip install keras-cv-attention-models
-
-RUN pip install scikit-image
-
-RUN pip install scikeras
-
-RUN pip install keras-tuner
-
-RUN pip install "numpy<2"
-
-RUN pip install keras==2.12.0
-
-CMD [ "jupyter", "lab", "-p", "8888"]
+CMD ["jupyter", "lab", "-p", "8888"]
